@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhalak Rastogi - Programming in GIS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Jhalak Rastogi</h2>
+                <span>M.Sc. Geoinformatics</span>
+            </div>
+            <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <button class="nav-btn active" data-tab="home"><i class="fas fa-home"></i> Home</button>
+                <button class="nav-btn" data-tab="about"><i class="fas fa-user"></i> About Me</button>
+                <button class="nav-btn" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+                <button class="nav-btn" data-tab="skills"><i class="fas fa-laptop-code"></i> My Skills</button>
+                <button class="nav-btn" data-tab="learning"><i class="fas fa-code"></i> Practical Learning</button>
+                <button class="nav-btn" data-tab="reflection"><i class="fas fa-brain"></i> Reflection</button>
+                <button class="nav-btn" data-tab="contact"><i class="fas fa-envelope"></i> Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+
+        <!-- HOME TAB -->
+        <section id="home" class="tab-content active">
+            <div class="hero-card">
+                <div class="hero-text">
+                    <span class="badge">Academic E-Portfolio</span>
+                    <h1>Programming in GIS</h1>
+                    <p class="subtitle">Automating Spatial Workflows & Vector Analysis with Python & VS Code</p>
+                    <p class="intro-p">Welcome! This portfolio documents my technical learning, practical exercises, and personal reflections for the Programming in GIS course at BVIEER, Pune.</p>
+                    <div class="hero-btns">
+                        <button class="btn btn-primary" onclick="switchTab('learning')">Explore Practical Work</button>
+                        <button class="btn btn-secondary" onclick="switchTab('reflection')">Read Reflections</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fas fa-bullseye"></i> Portfolio Purpose</h3>
+                    <p>Demonstrating foundational programming skills in Geographic Information Systems, covering automated vector data processing, spatial buffering, feature clipping, and map layout rendering.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-university"></i> Institution</h3>
+                    <p><strong>Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER)</strong><br>M.Sc. Geoinformatics (2026–2028)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME TAB -->
+        <section id="about" class="tab-content">
+            <div class="card">
+                <div class="section-header">
+                    <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+                    <p>Academic Background & Focus</p>
+                </div>
+                <p>Hello! I am <strong>Jhalak Rastogi</strong>, a postgraduate student pursuing a <strong>Master of Science in Geoinformatics</strong> at the Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER) in Pune, Maharashtra.</p>
+                
+                <p>Having earned my Bachelor's degree in Geography Honours from Amity University, Noida, my academic interests focus on physical geography, spatial analysis, and environmental management. Through my current postgraduate studies, I am combining my foundational geographical knowledge with technical GIS tools and computational automation.</p>
+                
+                <p>My aim in the <em>Programming in GIS</em> subject is to build practical proficiency in Python scripting using Visual Studio Code. By automating routine vector tasks such as spatial buffering, feature clipping, shapefile loading, and layout generation, I seek to transition from manual software operations to reproducible geospatial workflows for research and professional applications.</p>
+                
+                <div class="info-pills">
+                    <span class="pill"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION TAB -->
+        <section id="education" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Academic Education</h2>
+                <p>Qualifications & Coursework</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <span class="year-badge">2026 – Present</span>
+                        <h3>Master of Science in Geoinformatics</h3>
+                        <p class="institution">Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER), Pune</p>
+                        <p>Focusing on Python automation in GIS, spatial analysis, remote sensing image processing, and digital cartography.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <span class="year-badge">Completed</span>
+                        <h3>Bachelor of Arts (Honours) in Geography</h3>
+                        <p class="institution">Amity University, Noida</p>
+                        <p>Gained a strong foundation in physical geography, spatial cartography, human geography, and environmental studies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS TAB -->
+        <section id="skills" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+                <p>Software, Languages & Geospatial Tools</p>
+            </div>
+            <div class="grid-2">
+                <div class="card skill-card">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>GIS Platforms</h3>
+                    <ul>
+                        <li>ArcGIS Pro</li>
+                        <li>QGIS</li>
+                        <li>SAGA GIS</li>
+                        <li>Google Earth Pro</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming & Dev</h3>
+                    <ul>
+                        <li>Python (Geospatial)</li>
+                        <li>Visual Studio Code</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Basic JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICAL LEARNING TAB -->
+        <section id="learning" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-laptop-code"></i> Practical Learning in Class</h2>
+                <p>Key GIS Programming Workflows Mastered in VS Code</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 01</div>
+                    <h3><i class="fas fa-file-import"></i> Adding & Loading Shapefiles</h3>
+                    <p>Learned how to programmatically set workspace directories, read vector shapefiles using Python scripts in Visual Studio Code, and verify feature layer attributes without opening desktop GUI menus.</p>
+                </div>
+
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 02</div>
+                    <h3><i class="fas fa-bullseye"></i> Automated Buffer Analysis</h3>
+                    <p>Wrote Python scripts to execute multi-distance spatial buffers around vector point, line, and polygon features. Learned how specifying exact linear units programmatically ensures consistent spatial proximity analysis.</p>
+                </div>
+
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 03</div>
+                    <h3><i class="fas fa-cut"></i> Feature Clipping Operations</h3>
+                    <p>Implemented automated clipping tools via code to extract sub-regions of spatial layers using study area boundaries. Mastered defining input layers, clip features, and output destination paths.</p>
+                </div>
+
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 04</div>
+                    <h3><i class="fas fa-map"></i> Programmatic Map Layouts</h3>
+                    <p>Generated automated map layouts through script execution, including setting up map frames, applying symbology, adding scale bars, north arrows, titles, and exporting final maps to image formats.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFLECTION TAB -->
+        <section id="reflection" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-brain"></i> Subject Reflection</h2>
+                <p>Programming for GIS I — Personal & Practical Reflections</p>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-book-reader"></i> Practical & Personal Learning Reflection</h3>
+                <div class="meta-info">
+                    <span><strong>Subject:</strong> Programming for GIS I</span> | 
+                    <span><strong>Semester:</strong> M.Sc. Semester I</span> | 
+                    <span><strong>IDE:</strong> Visual Studio Code</span>
+                </div>
+                <hr class="divider">
+                
+                <p>Before studying <em>Programming for GIS I</em>, my primary experience with geospatial software was limited to clicking through user interfaces in desktop GIS programs like ArcGIS Pro and QGIS. Transitioning into Visual Studio Code to handle spatial workflows programmatically shifted my understanding of GIS from manual mapping to reproducible computational processing.</p>
+
+                <p>In our practical sessions, we focused on fundamental vector manipulation tasks: programmatically loading shapefiles, performing buffer analysis around spatial features, clipping datasets to exact boundary extents, and generating map layouts through code. Writing scripts for buffering and clipping demonstrated how automated scripts eliminate repetitive manual steps, allowing entire workflows to execute consistently within seconds.</p>
+
+                <p>My main learning difficulty initially involved handling relative versus absolute file paths and managing output file overwrite settings. Resolving path errors taught me to inspect terminal execution logs carefully before rewriting entire scripts. Furthermore, I realized that a script executing without errors does not automatically guarantee accurate cartographic output; inspecting spatial reference systems and feature geometry counts remains essential.</p>
+
+                <p>This practical foundation in VS Code provides a solid base for scaling up to complex geospatial scripts, batch processing, and automated spatial analytics in future research and professional projects.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT TAB -->
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Contact Information</h2>
+                <p>Get in Touch</p>
+            </div>
+            <div class="card contact-card">
+                <h3><i class="fas fa-user-circle"></i> Jhalak Rastogi</h3>
+                <p class="contact-sub">M.Sc. Geoinformatics Student</p>
+                <p>Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER), Pune</p>
+                <hr class="divider">
+                <div class="contact-links">
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:rastogijhalak26@gmail.com">rastogijhalak26@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jhalak-rastogi-b28704365/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">Jhalak Rastogi on LinkedIn</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Pune, Maharashtra, India</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Jhalak Rastogi | Programming in GIS E-Portfolio | BVIEER, Pune</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
